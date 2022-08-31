@@ -332,12 +332,12 @@ var Dropdown = /** @class */ (function () {
             }
             else {
                 this.show();
-                setTimeout(function () {
-                    if (_this.filterViewChild != undefined) {
-                        _this.filterViewChild.nativeElement.focus();
-                    }
-                    _this.focandoComMouse = false;
-                }, 200);
+                // setTimeout(function () {
+                //     if (_this.filterViewChild != undefined) {
+                //         _this.filterViewChild.nativeElement.focus();
+                //     }
+                //     _this.focandoComMouse = false;
+                // }, 200);
             }
         }
         else {
@@ -386,7 +386,7 @@ var Dropdown = /** @class */ (function () {
                 }
                 this.alignOverlay();
                 this.bindDocumentClickListener();
-                this.bindDocumentResizeListener();
+                // this.bindDocumentResizeListener();
                 if (this.options && this.options.length) {
                     var selectedListItem = this.domHandler.findSingle(this.itemsWrapper, '.ui-dropdown-item.ui-state-highlight');
                     if (selectedListItem) {
