@@ -577,12 +577,12 @@ export class Dropdown implements OnInit,AfterViewInit,AfterContentInit,AfterView
             else {
                 this.show();
 
-                setTimeout(() => {
-                    if (this.filterViewChild != undefined) {
-                        this.filterViewChild.nativeElement.focus();
-                    }
-                    this.focandoComMouse = false;
-                }, 200);
+                // setTimeout(() => {
+                //     if (this.filterViewChild != undefined) {
+                //         this.filterViewChild.nativeElement.focus();
+                //     }
+                //     this.focandoComMouse = false;
+                // }, 200);
             }
         } else {
             this.focandoComMouse = false;
@@ -637,7 +637,7 @@ export class Dropdown implements OnInit,AfterViewInit,AfterContentInit,AfterView
                 }
                 this.alignOverlay();
                 this.bindDocumentClickListener();
-                this.bindDocumentResizeListener();
+                // this.bindDocumentResizeListener();
 
                 if (this.options && this.options.length) {
                     let selectedListItem = this.domHandler.findSingle(this.itemsWrapper, '.ui-dropdown-item.ui-state-highlight');
