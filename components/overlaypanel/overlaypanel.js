@@ -99,7 +99,7 @@ var OverlayPanel = /** @class */ (function () {
                 }
                 this.domHandler.absolutePosition(this.container, this.target);
                 this.bindDocumentClickListener();
-                this.bindDocumentResizeListener();
+                // this.bindDocumentResizeListener();
                 break;
             case 'void':
                 this.onContainerDestroy();
